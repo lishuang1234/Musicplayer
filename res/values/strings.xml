@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">MusicPlay</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="none">未知</string>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000	</color>
+    <color name="translucent_background">#00000000</color> 
+</resources>

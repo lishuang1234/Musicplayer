@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+android:background="@drawable/back">
+
+    
+    <RelativeLayout 
+        android:id="@+id/title_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        >
+        <TextView
+            android:id="@+id/musicTitle2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+             android:ellipsize="marquee"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:gravity="center_horizontal"
+            android:lines="1"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:singleLine="true"
+            android:text="@string/none"
+             android:textAppearance="?android:attr/textAppearanceLarge"
+              android:textColor="@color/white"
+            />
+        
+        <TextView
+            android:id="@+id/musicArtist2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/musicTitle"
+            android:layout_below="@+id/musicTitle2"
+            android:layout_centerHorizontal="true"
+            android:gravity="center_horizontal"
+            android:text="@string/none"
+            android:textColor="@color/white" />
+        
+    <ListView
+        android:id="@+id/listView2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:cacheColorHint="#ffffff"
+         android:dividerHeight="1dip"
+        android:layout_marginBottom="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/musicArtist2" >
+    </ListView>
+    </RelativeLayout>
+    
+    
+       <RelativeLayout 
+        android:id="@+id/RelativeLayout2"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_alignParentBottom="true"
+       >
+
+       <Button
+           android:id="@+id/before"
+           android:layout_width="96px"
+           android:layout_height="96px"
+           android:layout_alignParentLeft="true"
+           android:background="@drawable/before" />
+
+       <Button 
+           android:id="@+id/repeat"
+           android:layout_height="96px"
+           android:layout_width="96px"
+           android:layout_toRightOf="@id/before"
+           android:background="@drawable/repeat"/>
+          <Button 
+           android:id="@+id/start"
+           android:layout_height="96px"
+           android:layout_width="96px"
+           android:layout_toRightOf="@id/repeat"
+           android:background="@drawable/pause"/>
+           <Button 
+           android:id="@+id/last"
+           android:layout_height="96px"
+           android:layout_width="96px"
+           android:layout_alignParentRight="true"
+           android:background="@drawable/last"/>
+           <Button 
+           android:id="@+id/circle"
+           android:layout_height="96px"
+           android:layout_width="96px"
+           android:layout_toLeftOf="@id/last"
+           android:background="@drawable/circle"/>
+       
+            </RelativeLayout>
+            <RelativeLayout 
+                android:id="@+id/RelativeLayout3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@id/RelativeLayout2"
+                android:background="@drawable/player_progresslayout_bg">
+          <SeekBar
+                android:id="@+id/progress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:background="@drawable/player_progress_bg"
+                android:thumb="@drawable/media_player_progress_button" />
+
+            <TextView
+                android:id="@+id/current"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/progress"
+                android:text="@string/none"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:id="@+id/allsize"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@id/progress" 
+                android:text="@string/none"
+                android:textColor="@color/white"/>
+                
+            </RelativeLayout>
+
+</RelativeLayout>
